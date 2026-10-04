@@ -9,9 +9,9 @@ from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 
 load_dotenv()
-API=os.getenv('LEDGERBITE_API_URL','http://127.0.0.1:8000')
-ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LOGO=os.path.join(ROOT,'assets','ledgerbite_logo.png')
+API = os.getenv('LEDGERBITE_API_URL', 'https://ledgerbite.onrender.com')
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+LOGO = os.path.join(ROOT, 'assets', 'ledgerbite_logo.png')
 
 st.set_page_config(page_title='LedgerBite',page_icon='🍴',layout='wide',initial_sidebar_state='expanded')
 st.markdown('''<style>
